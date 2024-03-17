@@ -7,7 +7,8 @@ const users = async(req, res) =>{
 };
 
 const usersTesting = async(req, res) =>{
-    res.status(200).json({msg:"Details of the users Testing"})
+    const myData = await user.find({});
+    res.status(200).json({myData});
 };
 
 module.exports = {users, usersTesting};

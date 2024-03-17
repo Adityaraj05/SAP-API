@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
                 "description": "The name of the bank"
                 },
 
-                "ipfs": {
+                "ifsc": {
                 "type": "string",
                 "required": "true",
                 "description": "The IPFS code associated with the account"
